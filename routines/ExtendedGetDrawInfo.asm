@@ -34,7 +34,7 @@
 	BCC .erasespr
 	CMP #$E0
 	BCC .hidespr
-	RTS
+	RTL
 .erasespr
 	STZ $170B|!Base2,x	; delete sprite.
 .hidespr
