@@ -1,4 +1,6 @@
-#pragma once
+#ifndef ASARDLL
+#define ASARDLL
+
 #ifndef asarfunc
 #define asarfunc extern
 #endif
@@ -129,5 +131,8 @@ asarfunc const struct writtenblockdata * (*asar_getwrittenblocks)(int * count);
 asarfunc enum mappertype (*asar_getmapper)();
 
 #ifdef __cplusplus
-	}
+} /* extern "C" */
 #endif
+
+#endif
+

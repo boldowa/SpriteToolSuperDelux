@@ -12,7 +12,7 @@
 	#else
 		#define EXTENSION ".so"
 	#endif
-	inline void * getlib()
+	/*inline*/ void * getlib()
 	{
 		char libname[256];
 		const char * names[]={"./libasar"EXTENSION, "libasar", NULL};
